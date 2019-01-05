@@ -10,12 +10,4 @@ This is a repository for practicing new technology that I have to learn.
   5. (new terminal) npm run bundle
 ```
 
-### Daily Log
-
- > Day 1: January 5, 2019
-
-  **Today's Progress**: Practice React Hooks
-
-  **Thoughts**: React hooks are way cooler than the current local state management. You can make your own custom hook to be used in other  component without rewriting the same functions. 
-
----
+[Daily Log](https://github.com/godfreyzubiaga/100-days-of-code/blob/master/log.md)
