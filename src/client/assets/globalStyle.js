@@ -15,8 +15,8 @@ export default createGlobalStyle`
   h5 {font-size:1.2em;}
   h6 {font-size:1.1em;}
   
-  h1, h2, h3, h4, h5, h6, p {
-    margin: 0 0 1em;
+  h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
   }
 
   p, ul, ol {
