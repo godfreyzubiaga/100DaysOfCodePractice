@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   body {
     margin: 0;
-    background: #cacaca;
+    background: #333;
     font-family: 'Mukta', sans-serif;
     letter-spacing: 2px;
   }
@@ -53,8 +53,9 @@ export default createGlobalStyle`
   input,
   select,
   textarea {
-    font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 2px;
   }
 
   label {
