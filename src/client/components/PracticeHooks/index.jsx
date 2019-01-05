@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Card from './Card';
-import Row from './Row';
-import Input from './Input';
+import Card from './components/Card';
+import Row from './components/Row';
+import Input from './components/Input';
 
 const StyledDiv = styled.div`
   text-align: center;
