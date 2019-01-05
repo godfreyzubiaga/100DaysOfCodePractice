@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "npx nodemon src/server/index.js",
-    "bundle": "npx webpack --config ./config/webpack/webpack.config.js --mode development -w"
+    "bundle": "npx webpack --config ./webpack/webpack.config.js --mode development -w"
   },
   "repository": {
     "type": "git",
