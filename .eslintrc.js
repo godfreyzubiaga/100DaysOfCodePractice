@@ -6,6 +6,7 @@ module.exports = {
   },
   rules: {
     'comma-dangle': 0,
-    'no-console': 0
+    'no-console': 0,
+    'react/jsx-one-expression-per-line': 0
   }
 };
