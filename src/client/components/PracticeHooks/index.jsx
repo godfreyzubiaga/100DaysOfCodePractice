@@ -6,13 +6,21 @@ import Input from './components/Input';
 import useFormInput from './customHooks/useFormInput';
 import Container from './components/Container';
 import Text from './components/Text';
+import BackNav from '../BackNav';
 
 const StyledDiv = styled.div`
+  height: 100vh;
+  background: slategrey;
+  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  color: white;
+`;
+
+const BackNavContainer = styled.div`
+  text-align: left;
+  width: 100vw;
 `;
 
 const PracticeHooks = () => {
@@ -22,6 +30,9 @@ const PracticeHooks = () => {
 
   return (
     <StyledDiv>
+      <BackNavContainer>
+        <BackNav />
+      </BackNavContainer>
       <h1>Hooks React Practice</h1>
       <Container>
         <Card>
