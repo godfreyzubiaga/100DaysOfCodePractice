@@ -7,7 +7,7 @@ const StyledDiv = styled.div`
   display: flex;
   height: 500px;
   width: 80%;
-  margin: auto;
+  margin: 30px auto;
   justify-content: space-between;
   align-items: flex-start;
   animation: ${fadeIn} 0.8s linear;
