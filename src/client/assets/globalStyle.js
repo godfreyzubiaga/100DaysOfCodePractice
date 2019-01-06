@@ -3,7 +3,6 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   body {
     margin: 0;
-    background: #333;
     font-family: 'Mukta', sans-serif;
     letter-spacing: 2px;
   }
