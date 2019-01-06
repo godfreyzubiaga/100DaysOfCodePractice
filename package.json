@@ -7,7 +7,8 @@
     "test": "jest",
     "start": "node src/server/index.js",
     "start:watch": "npx nodemon src/server/index.js",
-    "bundle": "npx webpack --config ./webpack/webpack.config.js --mode development -w"
+    "bundle": "npx webpack --config ./webpack/webpack.config.js --mode development -w",
+    "deploy": "git subtree push --prefix public origin gh-pages"
   },
   "repository": {
     "type": "git",
