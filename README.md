@@ -9,3 +9,5 @@ This is a repository for practicing new technology that I have to learn.
   4. npm run start
   5. (new terminal) npm run bundle
 ```
+
+[Daily Log](https://github.com/godfreyzubiaga/100-days-of-code/blob/master/log.md)
