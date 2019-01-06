@@ -11,4 +11,5 @@ This is a repository for practicing new technology that I have to learn.
 ```
 
 [Daily Log](https://github.com/godfreyzubiaga/100-days-of-code/blob/master/log.md)
+
 [Live Website](https://godfreyzubiaga.github.io/100DaysOfCodePractice/index.html#/)
