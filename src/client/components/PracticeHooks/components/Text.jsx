@@ -9,11 +9,11 @@ const StyledSpan = styled.span`
 const Text = ({ value }) => <StyledSpan>{value}</StyledSpan>;
 
 Text.propTypes = {
-  value: string
+  value: string,
 };
 
 Text.defaultProps = {
-  value: ''
+  value: '',
 };
 
 export default Text;

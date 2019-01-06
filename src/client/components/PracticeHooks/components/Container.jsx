@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { oneOfType, node, arrayOf } from 'prop-types';
+import fadeIn from '../../../assets/animations/fadeIn';
 
 const StyledDiv = styled.div`
   display: flex;
@@ -9,12 +10,13 @@ const StyledDiv = styled.div`
   margin: auto;
   justify-content: space-between;
   align-items: flex-start;
+  animation: ${fadeIn} 0.8s linear;
 `;
 
 const Container = ({ children }) => <StyledDiv>{children}</StyledDiv>;
 
 Container.propTypes = {
-  children: oneOfType([arrayOf(node), node]).isRequired
+  children: oneOfType([arrayOf(node), node]).isRequired,
 };
 
 export default Container;

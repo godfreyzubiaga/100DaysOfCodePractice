@@ -22,7 +22,7 @@ const Row = ({ children, label }) => (
 
 Row.propTypes = {
   children: node.isRequired,
-  label: string.isRequired
+  label: string.isRequired,
 };
 
 export default Row;

@@ -7,8 +7,8 @@ const StyledInput = styled.input`
   padding: 5px;
   font-size: 0.9em;
   width: 100%;
-  border-bottom: 1px solid black;
-  color: #333;
+  border-bottom: 1px solid gray;
+  color: white;
   font-weight: bold;
 
   &:focus {
