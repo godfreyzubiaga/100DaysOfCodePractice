@@ -33,7 +33,7 @@ const PracticeHooks = () => {
       <BackNavContainer>
         <BackNav />
       </BackNavContainer>
-      <h1>Hooks React Practice</h1>
+      <h1>React Hooks</h1>
       <Container>
         <Card>
           <h4>Form Input</h4>

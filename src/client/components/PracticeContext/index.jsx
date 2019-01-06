@@ -8,6 +8,8 @@ import BackNav from '../BackNav';
 
 const StyledDiv = styled.div`
   background: slategrey;
+  text-align: center;
+  color: white;
 `;
 
 const Container = styled.div`
@@ -28,6 +30,11 @@ const ToggleButton = styled.button`
   cursor: pointer;
 `;
 
+const BackNavContainer = styled.div`
+  text-align: left;
+  width: 100vw;
+`;
+
 const PracticeContext = () => {
   const [theme, setTheme] = useState(themes.light);
   const { dark, light } = themes;
@@ -39,7 +46,10 @@ const PracticeContext = () => {
 
   return (
     <StyledDiv>
-      <BackNav />
+      <BackNavContainer>
+        <BackNav />
+      </BackNavContainer>
+      <h1>React Context API</h1>
       <ThemeContext.Provider value={theme}>
         <Container>
           <MainComponent />
