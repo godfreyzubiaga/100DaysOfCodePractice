@@ -11,6 +11,6 @@ app.use(express.static(path.join(process.cwd(), '/public')));
 
 app.listen(port, (error) => {
   if (!error) {
-    console.log('Server is up @ https://localhost:3000');
+    console.log(`Server is up @ https://localhost:${port}`);
   }
 });
