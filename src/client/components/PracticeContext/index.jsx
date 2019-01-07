@@ -4,6 +4,7 @@ import { themes, ThemeContext } from './context/theme-context';
 import MainComponent from './components/MainComponent';
 import OtherComponent from './components/OtherComponent';
 import TrashComponent from './components/TrashComponent';
+import ToggleButton from './components/ToggleButton';
 import BackNav from '../BackNav';
 
 const StyledDiv = styled.div`
@@ -15,19 +16,6 @@ const StyledDiv = styled.div`
 const Container = styled.div`
   display: flex;
   margin: 50px;
-`;
-
-const ButtonContainer = styled.div`
-  text-align: center;
-`;
-
-const ToggleButton = styled.button`
-  background: #333333;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
 `;
 
 const PracticeContext = () => {
@@ -49,11 +37,7 @@ const PracticeContext = () => {
           <TrashComponent />
           <OtherComponent />
         </Container>
-        <ButtonContainer>
-          <ToggleButton {...theme} onClick={toggleTheme} {...theme}>
-            Toggle Theme
-          </ToggleButton>
-        </ButtonContainer>
+        <ToggleButton {...theme} onClick={toggleTheme} />
       </ThemeContext.Provider>
     </StyledDiv>
   );
