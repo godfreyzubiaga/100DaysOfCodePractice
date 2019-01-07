@@ -9,5 +9,5 @@ render(
     <GlobalStyle />
     <App />
   </div>,
-  mountPoint()
+  mountPoint(),
 );
