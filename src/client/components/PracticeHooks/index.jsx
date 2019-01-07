@@ -42,15 +42,15 @@ const PracticeHooks = () => {
         </Card>
         <Card alignLeft>
           <h4 style={{ textAlign: 'center' }}>Form Values</h4>
-          <p>
-            Name: <Text {...name} />
-          </p>
-          <p>
-            Email: <Text {...email} />
-          </p>
-          <p>
-            Age: <Text {...age} />
-          </p>
+          <Row label="Name">
+            <Text {...name} />
+          </Row>
+          <Row label="Email">
+            <Text {...email} />
+          </Row>
+          <Row label="Age">
+            <Text {...age} />
+          </Row>
         </Card>
       </Container>
     </StyledDiv>

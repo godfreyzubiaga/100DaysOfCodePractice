@@ -9,7 +9,7 @@ const StyledCard = styled.div`
   background: #333333;
   margin: 0 auto;
   color: white;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 5px;
   ${({ alignCenter }) => alignCenter
     && css`
