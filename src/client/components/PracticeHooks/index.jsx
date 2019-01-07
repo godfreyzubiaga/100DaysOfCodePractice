@@ -18,11 +18,6 @@ const StyledDiv = styled.div`
   flex-direction: column;
 `;
 
-const BackNavContainer = styled.div`
-  text-align: left;
-  width: 100vw;
-`;
-
 const PracticeHooks = () => {
   const name = useFormInput('Mary Poppins');
   const email = useFormInput('mary.poppins@gmail.com');
@@ -30,9 +25,7 @@ const PracticeHooks = () => {
 
   return (
     <StyledDiv>
-      <BackNavContainer>
-        <BackNav />
-      </BackNavContainer>
+      <BackNav />
       <h1>React Hooks</h1>
       <Container>
         <Card>

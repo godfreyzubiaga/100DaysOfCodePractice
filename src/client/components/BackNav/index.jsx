@@ -21,4 +21,13 @@ const StyledLink = styled(Link)`
   }
 `;
 
-export default () => <StyledLink to="/">&larr; Back To Home</StyledLink>;
+const BackNavContainer = styled.div`
+  text-align: left;
+  width: 100vw;
+`;
+
+export default () => (
+  <BackNavContainer>
+    <StyledLink to="/">&larr; Back To Home</StyledLink>
+  </BackNavContainer>
+);

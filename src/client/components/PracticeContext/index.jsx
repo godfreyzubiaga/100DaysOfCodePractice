@@ -30,11 +30,6 @@ const ToggleButton = styled.button`
   cursor: pointer;
 `;
 
-const BackNavContainer = styled.div`
-  text-align: left;
-  width: 100vw;
-`;
-
 const PracticeContext = () => {
   const [theme, setTheme] = useState(themes.light);
   const { dark, light } = themes;
@@ -46,9 +41,7 @@ const PracticeContext = () => {
 
   return (
     <StyledDiv>
-      <BackNavContainer>
-        <BackNav />
-      </BackNavContainer>
+      <BackNav />
       <h1>React Context API</h1>
       <ThemeContext.Provider value={theme}>
         <Container>
