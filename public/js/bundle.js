@@ -148,9 +148,9 @@ Object.defineProperty(t,"__esModule",{value:!0});var n=null,r=!1,o=3,a=-1,i=-1,l
   transition-duration: 0.5s;
 `;var ze=()=>o.a.createElement(je.Consumer,null,e=>o.a.createElement(Me,e,"Other Components"));const Le=i.c.div`
   text-align: center;
-  background: white;
-  color: #000000;
-  border: 1px solid #000000;
+  background: ${e=>e.background};
+  color: ${e=>e.foreground};
+  border: ${e=>e.border};
   box-sizing: border-box;
   height: 300px;
   width: 200px;
@@ -160,7 +160,7 @@ Object.defineProperty(t,"__esModule",{value:!0});var n=null,r=!1,o=3,a=-1,i=-1,l
   justify-content: center;
   border-radius: 10px;
   animation: ${pe} 0.8s linear;
-`;var Ue=()=>o.a.createElement(Le,null,"Trash Components");const Fe=i.c.button`
+`;var Ue=()=>o.a.createElement(Le,Re.dark,"Trash Components");const Fe=i.c.button`
   background: #333333;
   color: white;
   border: none;
