@@ -62,3 +62,6 @@ typings/
 
 # build directory
 public/js/
+
+# private configs
+config/firebaseConfig.js
