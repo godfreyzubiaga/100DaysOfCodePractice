@@ -11,3 +11,5 @@ render(
   </div>,
   mountPoint(),
 );
+
+module.hot.accept();

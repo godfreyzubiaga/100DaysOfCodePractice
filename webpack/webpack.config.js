@@ -27,11 +27,13 @@ const config = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
+    contentBase: path.join(process.cwd(), 'public'),
+    port: 3000,
+    host: '127.0.0.1',
     historyApiFallback: true,
-    contentBase: './',
-    hot: true,
   },
 };
 
