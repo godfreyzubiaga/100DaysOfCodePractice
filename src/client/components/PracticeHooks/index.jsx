@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from './components/Card';
 import Row from './components/Row';
-import Input from './components/Input';
-import useFormInput from './customHooks/useFormInput';
+import Input from '../Input';
+import useFormInput from '../../customHooks/useFormInput';
 import Container from './components/Container';
 import Text from './components/Text';
 import BackNav from '../BackNav';
@@ -43,13 +43,13 @@ const PracticeHooks = () => {
         <Card alignLeft>
           <h4 style={{ textAlign: 'center' }}>Form Values</h4>
           <Row label="Name">
-            <Text {...name} />
+            <Text value={name.value} />
           </Row>
           <Row label="Email">
-            <Text {...email} />
+            <Text value={email.value} />
           </Row>
           <Row label="Age">
-            <Text {...age} />
+            <Text value={age.value.toString()} />
           </Row>
         </Card>
       </Container>
