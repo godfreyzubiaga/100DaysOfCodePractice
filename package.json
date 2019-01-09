@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start:frontend-only": "webpack-dev-server --config ./webpack/webpack.config.js --mode development",
     "start:": "node src/server/index.js",
-    "bundle:": "npx webpack --config ./webpack/webpack.config.js --mode development",
+    "bundle:": "npx webpack --config ./webpack/webpack.config.js --mode development -w",
     "build": "npx webpack --config ./webpack/webpack.config.js --mode production",
     "deploy": "npm run build && git subtree push --prefix public origin gh-pages"
   },
