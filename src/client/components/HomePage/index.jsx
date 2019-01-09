@@ -23,6 +23,7 @@ export default () => (
     <Title>#100DaysOfCode Practice</Title>
     <Navigation link="/hooks" name="React Hooks" />
     <Navigation link="/context" name="React Context" />
+    <Navigation link="/profile" name="Simple Profile" />
     <Footer />
   </StyledDiv>
 );
