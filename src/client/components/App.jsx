@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Provider } from 'unstated';
 import Routes from '../Routes';
 
 const StyledDiv = styled.div`
@@ -9,6 +10,8 @@ const StyledDiv = styled.div`
 
 export default () => (
   <StyledDiv>
-    <Routes />
+    <Provider>
+      <Routes />
+    </Provider>
   </StyledDiv>
 );
