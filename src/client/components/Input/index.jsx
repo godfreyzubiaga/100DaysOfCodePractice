@@ -7,9 +7,10 @@ const StyledInput = styled.input`
   padding: 5px;
   font-size: 0.9em;
   width: 100%;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid white;
   color: white;
   font-weight: bold;
+  margin: 0;
 
   &:focus {
     outline: none;

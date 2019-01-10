@@ -11,7 +11,6 @@ const StyledDiv = styled.div`
   height: 80%;
   width: 80%;
   margin: auto;
-  border: 1px solid white;
 `;
 
 const Container = ({ children }) => <StyledDiv>{children}</StyledDiv>;

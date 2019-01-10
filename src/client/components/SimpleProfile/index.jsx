@@ -4,16 +4,22 @@ import { Subscribe } from 'unstated';
 import { Redirect } from 'react-router';
 import Container from './Container';
 import UserContainer from './Containers/UserContainer';
+import Button from '../Button';
+import BackNav from '../BackNav';
 
 const StyledDiv = styled.div`
+  height: 100vh;
+  background: slategrey;
   color: white;
   display: flex;
-  justify-content: center;
-  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export default () => (
   <StyledDiv>
+    <BackNav />
     <Subscribe to={[UserContainer]}>
       {(userContainer) => {
         const { state } = userContainer;
@@ -23,9 +29,9 @@ export default () => (
         return (
           <Container>
             <h1>Hello, {state.user.name}!</h1>
-            <button type="button" onClick={() => userContainer.logout()}>
+            <Button type="button" onClick={() => userContainer.logout()}>
               Logout
-            </button>
+            </Button>
           </Container>
         );
       }}

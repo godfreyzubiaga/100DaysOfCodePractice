@@ -5,29 +5,25 @@ import styled from 'styled-components';
 import Container from './Container';
 import useFormInput from '../../customHooks/useFormInput';
 import UserContainer from './Containers/UserContainer';
+import Input from '../Input';
+import BackNav from '../BackNav';
+import Button from '../Button';
+import Label from '../Label';
 
 const StyledDiv = styled.div`
-  display: flex;
-  justify-content: center;
   height: 100vh;
+  background: slategrey;
   color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-`;
-
-const Submit = styled.button`
-  padding: 10px 15px;
-  border: none;
-  border-radius: 3px;
-  letter-spacing: 2px;
-  background: #333;
-  color: white;
-  cursor: pointer;
-  margin: 10px;
 `;
 
 const Signin = () => {
@@ -51,29 +47,27 @@ const Signin = () => {
   }
   return (
     <StyledDiv>
+      <BackNav />
       <Subscribe to={[UserContainer]}>
         {userContainer => (
           <Container>
             <h1>Sign Up</h1>
             <StyledForm
-              autocomplete="off"
+              autoComplete="off"
               onSubmit={event => submitForm(event, userContainer.login)}
             >
-              <label htmlFor="name">
-                <p>Name</p>
-                <input autoComplete="false" id="name" type="text" required {...name} />
-              </label>
-              <label htmlFor="name">
-                <p>Email</p>
-                <input autoComplete="false" id="email" type="email" required {...email} />
-              </label>
-              <label htmlFor="address">
-                <p>Address</p>
-                <input autoComplete="false" id="address" type="text" required {...address} />
-              </label>
-              <div>
-                <Submit type="submit">Submit</Submit>
-              </div>
+              <Label htmlFor="name" label="Name">
+                <Input autoComplete="false" id="name" type="text" required {...name} />
+              </Label>
+              <Label htmlFor="name" label="Email">
+                <Input autoComplete="false" id="email" type="email" required {...email} />
+              </Label>
+              <Label htmlFor="address" label="Address">
+                <Input autoComplete="false" id="address" type="text" required {...address} />
+              </Label>
+              <p>
+                <Button type="submit">Submit</Button>
+              </p>
             </StyledForm>
           </Container>
         )}
