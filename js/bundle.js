@@ -210,7 +210,7 @@ Object.defineProperty(t,"__esModule",{value:!0});var n=null,r=!1,o=3,a=-1,i=-1,l
   right: 0;
   bottom: 20px;
   color: white;
-`;var st=()=>o.a.createElement(ct,null,o.a.createElement("h4",null,"Links"),o.a.createElement(at,null,o.a.createElement(ut,{href:"https://github.com/godfreyzubiaga/100DaysOfCodePractice",name:"Repository"}),o.a.createElement(ut,{href:"https://godfreyzubiaga.github.io",name:"Portfolio"})));const ft=i.c.div`
+`;var st=()=>o.a.createElement(ct,null,o.a.createElement("h4",null,"Links"),o.a.createElement(at,null,o.a.createElement(ut,{href:"https://github.com/godfreyzubiaga/100DaysOfCodePractice",name:"Repository"}),o.a.createElement(ut,{href:"https://github.com/godfreyzubiaga/100-days-of-code/blob/master/log.md",name:"Daily Log"}),o.a.createElement(ut,{href:"https://godfreyzubiaga.github.io",name:"Portfolio"})));const ft=i.c.div`
   margin-top: 20px;
 `,pt=Object(i.c)(ze)`
   cursor: pointer;
