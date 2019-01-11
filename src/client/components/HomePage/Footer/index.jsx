@@ -18,6 +18,7 @@ export default () => (
     <h4>Links</h4>
     <Container>
       <Link href="https://github.com/godfreyzubiaga/100DaysOfCodePractice" name="Repository" />
+      <Link href="https://github.com/godfreyzubiaga/100-days-of-code/blob/master/log.md" name="Daily Log" />
       <Link href="https://godfreyzubiaga.github.io" name="Portfolio" />
     </Container>
   </Footer>
